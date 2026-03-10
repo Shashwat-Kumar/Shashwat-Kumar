@@ -46,3 +46,20 @@ A full-stack AI/ML engineer building deeply human-centered intelligent systems �
 
 🪄 _"I don’t just write code — I design intelligence."_  
 
+
+---
+
+## 🐍 English to SQL (Python)
+A simple rule-based Python script is included to convert common English prompts into SQL queries.
+
+**File:** `english_to_sql.py`
+
+Run it:
+```bash
+python3 english_to_sql.py
+```
+
+Example prompts:
+- `show all employees`
+- `count employees in sales`
+- `average salary where department is engineering`
