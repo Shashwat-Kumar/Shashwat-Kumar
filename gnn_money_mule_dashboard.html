@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GNN vs Traditional ML: Money Mule Detection</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+      :root {
+        --bg: #091428;
+        --panel: #13233f;
+        --panel-2: #1a2f54;
+        --text: #eaf1ff;
+        --muted: #9cb0d3;
+        --gnn: #45f0c7;
+        --ml: #f7b955;
+        --alert: #ff6b6b;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Inter, Segoe UI, Roboto, Arial, sans-serif;
+        background: radial-gradient(circle at 10% 20%, #16305e, var(--bg));
+        color: var(--text);
+      }
+      .container {
+        max-width: 1100px;
+        margin: 24px auto;
+        padding: 20px;
+      }
+      h1 { margin-bottom: 8px; }
+      .subtitle { color: var(--muted); margin-top: 0; }
+      .grid {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+      .card {
+        background: linear-gradient(160deg, var(--panel), var(--panel-2));
+        border: 1px solid rgba(255,255,255,0.08);
+        border-radius: 14px;
+        padding: 16px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+      }
+      .metric { font-size: 1.8rem; font-weight: 700; margin: 6px 0; }
+      .label { color: var(--muted); font-size: 0.9rem; }
+      .pill {
+        display: inline-block;
+        margin-left: 8px;
+        font-size: 0.75rem;
+        padding: 3px 8px;
+        border-radius: 999px;
+      }
+      .pill.gnn { background: rgba(69, 240, 199, 0.2); color: var(--gnn); }
+      .pill.ml { background: rgba(247, 185, 85, 0.2); color: var(--ml); }
+      .controls { margin: 22px 0; display: grid; gap: 12px; }
+      .control {
+        background: rgba(255,255,255,0.05);
+        padding: 12px;
+        border-radius: 10px;
+      }
+      input[type="range"] { width: 100%; }
+      .network { margin-top: 8px; overflow-x: auto; }
+      svg { width: 100%; min-height: 260px; }
+      .edge { stroke: rgba(185, 205, 255, 0.5); stroke-width: 1.6; }
+      .node { stroke: #fff; stroke-width: 1.5; }
+      .node.customer { fill: #6ea8fe; }
+      .node.mule { fill: var(--alert); }
+      .node.shell { fill: #ff9f43; }
+      .node.safe { fill: #4cd137; }
+      .node.gnn-focus { stroke: var(--gnn); stroke-width: 4; }
+      .node.ml-focus { stroke: var(--ml); stroke-width: 4; }
+      .legend { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; font-size: 0.9rem; color: var(--muted); }
+      .legend span::before { content: "● "; }
+      .insights ul { margin: 8px 0 0; padding-left: 20px; }
+      .insights li { margin: 4px 0; color: #dae6ff; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const { useMemo, useState } = React;
+
+      const nodes = [
+        { id: "A", x: 80, y: 80, type: "customer" },
+        { id: "B", x: 180, y: 60, type: "customer" },
+        { id: "C", x: 270, y: 90, type: "mule" },
+        { id: "D", x: 360, y: 65, type: "shell" },
+        { id: "E", x: 460, y: 85, type: "customer" },
+        { id: "F", x: 120, y: 180, type: "safe" },
+        { id: "G", x: 220, y: 165, type: "customer" },
+        { id: "H", x: 320, y: 170, type: "mule" },
+        { id: "I", x: 420, y: 180, type: "shell" },
+        { id: "J", x: 520, y: 155, type: "customer" }
+      ];
+
+      const edges = [
+        ["A", "B"], ["B", "C"], ["C", "D"], ["D", "E"],
+        ["A", "F"], ["F", "G"], ["G", "H"], ["H", "I"], ["I", "J"],
+        ["C", "H"], ["D", "I"], ["B", "G"]
+      ];
+
+      function Dashboard() {
+        const [ringStrength, setRingStrength] = useState(70);
+        const [noise, setNoise] = useState(20);
+
+        const metrics = useMemo(() => {
+          const gnnRecall = Math.min(98, 72 + ringStrength * 0.28 - noise * 0.12);
+          const mlRecall = Math.max(30, 62 + ringStrength * 0.08 - noise * 0.24);
+          const falsePosGNN = Math.max(4, 16 - ringStrength * 0.09 + noise * 0.08);
+          const falsePosML = Math.min(42, 18 - ringStrength * 0.02 + noise * 0.26);
+          return {
+            gnnRecall: gnnRecall.toFixed(1),
+            mlRecall: mlRecall.toFixed(1),
+            falsePosGNN: falsePosGNN.toFixed(1),
+            falsePosML: falsePosML.toFixed(1),
+          };
+        }, [ringStrength, noise]);
+
+        const gnnFocus = ["C", "H", "D", "I"];
+        const mlFocus = ringStrength > 55 ? ["C"] : ["C", "E"];
+
+        return (
+          <main className="container">
+            <h1>Interactive Dashboard: GNN vs Traditional ML for Money Mule Detection</h1>
+            <p className="subtitle">
+              Graph Neural Networks model <strong>relationships</strong> between accounts,
+              not just account-level features — making mule-ring detection significantly stronger.
+            </p>
+
+            <section className="grid">
+              <article className="card">
+                <div className="label">Money Mule Recall <span className="pill gnn">GNN</span></div>
+                <div className="metric">{metrics.gnnRecall}%</div>
+                <div className="label">Captures hidden ring behavior through transaction topology.</div>
+              </article>
+              <article className="card">
+                <div className="label">Money Mule Recall <span className="pill ml">Traditional ML</span></div>
+                <div className="metric">{metrics.mlRecall}%</div>
+                <div className="label">Relies on isolated features, misses collusive structure.</div>
+              </article>
+              <article className="card">
+                <div className="label">False Positives <span className="pill gnn">GNN</span></div>
+                <div className="metric">{metrics.falsePosGNN}%</div>
+                <div className="label">Better context lowers unnecessary account blocks.</div>
+              </article>
+              <article className="card">
+                <div className="label">False Positives <span className="pill ml">Traditional ML</span></div>
+                <div className="metric">{metrics.falsePosML}%</div>
+                <div className="label">Feature overlap often flags genuine users incorrectly.</div>
+              </article>
+            </section>
+
+            <section className="controls">
+              <div className="control">
+                <label>
+                  Ring coordination strength: <strong>{ringStrength}</strong>
+                </label>
+                <input type="range" min="0" max="100" value={ringStrength}
+                  onChange={(e) => setRingStrength(Number(e.target.value))} />
+              </div>
+              <div className="control">
+                <label>
+                  Data noise / obfuscation: <strong>{noise}</strong>
+                </label>
+                <input type="range" min="0" max="100" value={noise}
+                  onChange={(e) => setNoise(Number(e.target.value))} />
+              </div>
+            </section>
+
+            <section className="card network">
+              <h3>Transaction Graph View</h3>
+              <svg viewBox="0 0 600 260" role="img" aria-label="money mule network graph">
+                {edges.map(([a, b]) => {
+                  const n1 = nodes.find((n) => n.id === a);
+                  const n2 = nodes.find((n) => n.id === b);
+                  return <line key={`${a}-${b}`} className="edge" x1={n1.x} y1={n1.y} x2={n2.x} y2={n2.y} />;
+                })}
+
+                {nodes.map((n) => {
+                  const classes = ["node", n.type];
+                  if (gnnFocus.includes(n.id)) classes.push("gnn-focus");
+                  if (mlFocus.includes(n.id)) classes.push("ml-focus");
+                  return (
+                    <g key={n.id}>
+                      <circle className={classes.join(" ")} cx={n.x} cy={n.y} r="14" />
+                      <text x={n.x} y={n.y + 4} textAnchor="middle" fontSize="11" fill="#fff">{n.id}</text>
+                    </g>
+                  );
+                })}
+              </svg>
+              <div className="legend">
+                <span style={{ color: "#6ea8fe" }}>Customer</span>
+                <span style={{ color: "#ff6b6b" }}>Money Mule</span>
+                <span style={{ color: "#ff9f43" }}>Shell Account</span>
+                <span style={{ color: "#45f0c7" }}>GNN neighborhood focus</span>
+                <span style={{ color: "#f7b955" }}>Traditional ML local focus</span>
+              </div>
+            </section>
+
+            <section className="card insights">
+              <h3>Why GNN Wins</h3>
+              <ul>
+                <li>GNN aggregates neighborhood signals, revealing multi-hop laundering paths.</li>
+                <li>It detects coordinated behavior patterns even when individual accounts look normal.</li>
+                <li>Shared embeddings across linked entities improve generalization to unseen mule rings.</li>
+              </ul>
+            </section>
+          </main>
+        );
+      }
+
+      ReactDOM.createRoot(document.getElementById("root")).render(<Dashboard />);
+    </script>
+  </body>
+</html>
