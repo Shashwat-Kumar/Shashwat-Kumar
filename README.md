@@ -63,3 +63,15 @@ Example prompts:
 - `show all employees`
 - `count employees in sales`
 - `average salary where department is engineering`
+
+
+## 📊 Interactive GNN Dashboard (HTML + CSS + React)
+An interactive dashboard that explains why Graph Neural Networks detect **Money Mules** better than traditional ML is available in:
+
+- `gnn_money_mule_dashboard.html`
+
+Run locally:
+```bash
+python3 -m http.server 8000
+```
+Then open `http://localhost:8000/gnn_money_mule_dashboard.html`.
