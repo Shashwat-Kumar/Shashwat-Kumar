@@ -1,28 +1,30 @@
-# Shashwat Kumar
+### Shashwat Kumar
 
-**Head, Business Intelligence & Analytics, DCB Bank (Mumbai)**
+*Most of what goes wrong with data and AI is not a modelling problem. It is a question of what we choose to measure, what we let machines decide, and who stays accountable.*
 
-I've spent 15+ years building analytics and AI functions across banking, NBFC lending, insurance and telecom. At DCB Bank I lead a centralised analytics centre of excellence: MIS and KPI frameworks, risk and early-warning analytics, personalisation, data-lake modernisation, and GenAI/AI use cases taken into production.
+15+ years leading analytics and AI across financial services, insurance and telecom/media. Based in Mumbai.
 
-**Previously:** Head of Advanced Analytics & Digital Lending Strategy at L&T Finance; Head of Analytics at Aditya Birla Health Insurance; commercial planning & analytics at Tata Sky; global CVM analytics at Vodafone.
+**Education:** PGDM, XLRI Jamshedpur · PGP, IIM Calcutta · Diploma in Advanced Analytics, ISI · FRM Part I (GARP) I write about the quieter side of the work: governance, measurement, data quality, and how intelligent systems should be designed to earn trust.
 
-**Focus areas**
-- Data and AI strategy and operating models for regulated financial services
-- Credit, fraud and financial-crime analytics
-- Customer lifecycle, propensity and personalisation
-- Data governance, quality and privacy readiness
+**Essays** · [shashwat-kumar.github.io/shashwat-analytics](https://shashwat-kumar.github.io/shashwat-analytics)
 
-**Education:** PGDM, XLRI Jamshedpur · PGP, IIM Calcutta · Diploma in Advanced Analytics, ISI · FRM Part I (GARP)
+- [Faster cars need better brakes](https://shashwat-kumar.github.io/shashwat-analytics/essays/brakes.html): deciding what a system may do on its own
+- [When the score becomes the goal](https://shashwat-kumar.github.io/shashwat-analytics/essays/goodhart.html): Goodhart's law in the age of optimising agents
+- [Intelligence without a main character](https://shashwat-kumar.github.io/shashwat-analytics/essays/many-agents.html): capability that emerges from orchestration
+- [Models are only as good as their inputs](https://shashwat-kumar.github.io/shashwat-analytics/essays/data-quality.html): make your data boring
+- [Ideas map →](https://shashwat-kumar.github.io/shashwat-analytics/ideas.html)
 
-## Public code
+**Code** · small, self-contained studies on synthetic data
 
-These are small, self-contained demos on **synthetic data**. They show the methods I use; they contain no employer data or work product.
-
-| Repo | What it shows |
+| | |
 |---|---|
-| [bank-analytics-agent](https://github.com/Shashwat-Kumar/bank-analytics-agent) | Tool-calling agent: plain-English question → guarded read-only SQL → answer and chart. Works offline; an LLM planner is optional. |
-| [churn-propensity-model](https://github.com/Shashwat-Kumar/churn-propensity-model) | Gradient boosting vs logistic baseline, SHAP drivers, decile lift for campaign targeting |
-| [credit-risk-scorecard](https://github.com/Shashwat-Kumar/credit-risk-scorecard) | WoE/IV application scorecard with PDO scaling, AUC/KS/Gini and a calibration check |
+| [churn-propensity-model](https://github.com/Shashwat-Kumar/churn-propensity-model) | Is the clever model worth it? Gradient boosting against a logistic baseline, SHAP drivers, decile lift |
+| [credit-risk-scorecard](https://github.com/Shashwat-Kumar/credit-risk-scorecard) | WoE/IV application scorecard with PDO scaling, AUC/KS/Gini and calibration |
 | [`english_to_sql.py`](english_to_sql.py) | A tiny rule-based English-to-SQL snippet with unit tests |
+| [bank-analytics-agent](https://github.com/Shashwat-Kumar/bank-analytics-agent) | Plain-English question → guarded read-only SQL → answer and chart |
+| [kpi-dashboard-mis](https://github.com/Shashwat-Kumar/kpi-dashboard-mis) | One set of numbers: KPI dashboard and MIS pack generated end to end from code |
+| [dpdp-readiness-toolkit](https://github.com/Shashwat-Kumar/dpdp-readiness-toolkit) | Score a personal-data inventory against India's DPDP Act and Rules |
 
-[LinkedIn](https://www.linkedin.com/in/shashwat-kumar)
+[LinkedIn](https://www.linkedin.com/in/shashwat-kumar) · [Essays](https://shashwat-kumar.github.io/shashwat-analytics)
+
+<sub>All demos use synthetic data about fictional companies. Views are my own.</sub>
