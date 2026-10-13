@@ -1,7 +1,13 @@
-"""Simple English-to-SQL converter.
+"""Simple English-to-SQL converter (small demo).
 
-This module provides a lightweight rule-based converter for common
-analytical questions written in English.
+A lightweight, rule-based converter for a handful of common analytical
+questions written in English. It uses regular expressions only: no
+machine learning, no database connection, and no schema awareness.
+It is intended as a teaching/illustration snippet, not production code.
+
+Usage:
+    python3 english_to_sql.py          # interactive prompt
+    python3 -m unittest test_english_to_sql.py
 """
 
 from __future__ import annotations
@@ -136,7 +142,11 @@ def main() -> None:
     print("Type 'exit' to quit.\n")
 
     while True:
-        text = input("English query: ").strip()
+        try:
+            text = input("English query: ").strip()
+        except (EOFError, KeyboardInterrupt):
+            print()
+            break
         if text.lower() in {"exit", "quit"}:
             break
 

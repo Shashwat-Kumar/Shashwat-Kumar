@@ -1,65 +1,28 @@
-<h1 align="center">⚡ Shashwat Kumar</h1>
-<h3 align="center">Engineer of Intelligence | Architect of Algorithms | Builder of Better AI</h3>
+# Shashwat Kumar
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&center=true&vCenter=true&width=900&lines=Training+LLMs+like+athletes+train;+Engineering+AI+that+matters;+Turning+data+into+decisions;+MLOps+is+my+gym;+Exotic+pipelines+%E2%80%94+Real-world+impact" alt="Typing SVG" />
-</p>
+**Head, Business Intelligence & Analytics, DCB Bank (Mumbai)**
 
----
+I've spent 15+ years building analytics and AI functions across banking, NBFC lending, insurance and telecom. At DCB Bank I lead a centralised analytics centre of excellence: MIS and KPI frameworks, risk and early-warning analytics, personalisation, data-lake modernisation, and GenAI/AI use cases taken into production.
 
-🧠 **Who I Am**  
-A full-stack AI/ML engineer building deeply human-centered intelligent systems — from **LLMs & computer vision** to **real-time analytics & scalable ML infra**. I live at the intersection of **neuroscience, code, and impact**.
+**Previously:** Head of Advanced Analytics & Digital Lending Strategy at L&T Finance; Head of Analytics at Aditya Birla Health Insurance; commercial planning & analytics at Tata Sky; global CVM analytics at Vodafone.
 
-💡 Currently:
-- Scaling GenAI tools for real-world domains (finance, healthcare, education)
-- Building LLM-powered copilots, tutors, and trading assistants
-- Exploring how prompt engineering + inference engineering = future of software
+**Focus areas**
+- Data and AI strategy and operating models for regulated financial services
+- Credit, fraud and financial-crime analytics
+- Customer lifecycle, propensity and personalisation
+- Data governance, quality and privacy readiness
 
----
+**Education:** PGDM, XLRI Jamshedpur · PGP, IIM Calcutta · Diploma in Advanced Analytics, ISI · FRM Part I (GARP)
 
-🚀 **Projects That Tell My Story**
-| Project | Domain | Highlights |
-|--------|--------|------------|
-| 🦜 `LLM-Garage` | GenAI | RAG pipelines with LangChain + FAISS + OpenRouter APIs |
-| 📈 `TraderMind` | FinTech | Ensemble ML for price prediction & sentiment-driven alerts |
-| 🎓 `AutoTutorAI` | EdTech | GPT-trained AI tutor with voice + Indian curriculum grounding |
-| 🪞 `CV-Wizard` | Vision | Real-time image classification + segmentation with ONNX |
-| 🧰 `MLOps-Stack` | Infra | Docker + Airflow + MLFlow template with FastAPI endpoints |
+## Public code
 
----
+These are small, self-contained demos on **synthetic data**. They show the methods I use; they contain no employer data or work product.
 
-📊 **Dev Vitals**
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Shashwat-Kumar&style=flat-square&color=blue" alt="Profile views"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Shashwat-Kumar&theme=dark"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shashwat-Kumar&layout=compact&theme=dark" />
-</p>
+| Repo | What it shows |
+|---|---|
+| [bank-analytics-agent](https://github.com/Shashwat-Kumar/bank-analytics-agent) | Tool-calling agent: plain-English question → guarded read-only SQL → answer and chart. Works offline; an LLM planner is optional. |
+| [churn-propensity-model](https://github.com/Shashwat-Kumar/churn-propensity-model) | Gradient boosting vs logistic baseline, SHAP drivers, decile lift for campaign targeting |
+| [credit-risk-scorecard](https://github.com/Shashwat-Kumar/credit-risk-scorecard) | WoE/IV application scorecard with PDO scaling, AUC/KS/Gini and a calibration check |
+| [`english_to_sql.py`](english_to_sql.py) | A tiny rule-based English-to-SQL snippet with unit tests |
 
-
-
-📡 **Let’s Connect**
-- 💼 (Lnkedin https://www.linkedin.com/in/shashwat-kumar) 
-- 📫 [Email](mailto:shashwat1232@gmail.com)
-  
-
----
-
-🪄 _"I don’t just write code — I design intelligence."_  
-
-
----
-
-## 🐍 English to SQL (Python)
-A simple rule-based Python script is included to convert common English prompts into SQL queries.
-
-**File:** `english_to_sql.py`
-
-Run it:
-```bash
-python3 english_to_sql.py
-```
-
-Example prompts:
-- `show all employees`
-- `count employees in sales`
-- `average salary where department is engineering`
+[LinkedIn](https://www.linkedin.com/in/shashwat-kumar)
