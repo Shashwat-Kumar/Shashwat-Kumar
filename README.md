@@ -8,7 +8,7 @@
 
 Today I lead business intelligence and analytics at a private-sector bank in Mumbai. Before that I headed advanced analytics and digital lending strategy at a retail lender (NBFC) and analytics at a health insurer, with earlier roles in commercial planning and analytics in satellite TV/media, and in telecom and technology.
 
-**Education:** PGDM, XLRI Jamshedpur · PGP, IIM Calcutta · Diploma in Advanced Analytics, ISI · FRM Part I (GARP)
+**Education:** PGDM, XLRI Jamshedpur · PGPMI · Diploma in Advanced Analytics, ISI · FRM Part I (GARP)
 
 **Essays** · [shashwat-kumar.github.io/shashwat-analytics](https://shashwat-kumar.github.io/shashwat-analytics)
 
