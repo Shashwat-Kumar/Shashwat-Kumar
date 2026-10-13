@@ -10,13 +10,13 @@ Today I lead business intelligence and analytics at a private-sector bank in Mum
 
 **Education:** PGDM, XLRI Jamshedpur · PGPMI · Diploma in Advanced Analytics, ISI · FRM Part I (GARP)
 
-**Essays** · [shashwat-kumar.github.io/shashwat-analytics](https://shashwat-kumar.github.io/shashwat-analytics)
+**Essays** · [readsigil.com](https://readsigil.com/)
 
-- [Faster cars need better brakes](https://shashwat-kumar.github.io/shashwat-analytics/essays/brakes.html): deciding what a system may do on its own
-- [When the score becomes the goal](https://shashwat-kumar.github.io/shashwat-analytics/essays/goodhart.html): Goodhart's law in the age of optimising agents
-- [Intelligence without a main character](https://shashwat-kumar.github.io/shashwat-analytics/essays/many-agents.html): capability that emerges from orchestration
-- [Models are only as good as their inputs](https://shashwat-kumar.github.io/shashwat-analytics/essays/data-quality.html): make your data boring
-- [Ideas map →](https://shashwat-kumar.github.io/shashwat-analytics/ideas.html)
+- [Faster cars need better brakes](https://readsigil.com/essays/brakes.html): deciding what a system may do on its own
+- [When the score becomes the goal](https://readsigil.com/essays/goodhart.html): Goodhart's law in the age of optimising agents
+- [Intelligence without a main character](https://readsigil.com/essays/many-agents.html): capability that emerges from orchestration
+- [Models are only as good as their inputs](https://readsigil.com/essays/data-quality.html): make your data boring
+- [Ideas map →](https://readsigil.com/ideas.html)
 
 **Code** · small, self-contained studies on synthetic data
 
@@ -29,6 +29,6 @@ Today I lead business intelligence and analytics at a private-sector bank in Mum
 | [kpi-dashboard-mis](https://github.com/Shashwat-Kumar/kpi-dashboard-mis) | One set of numbers: KPI dashboard and MIS pack generated end to end from code |
 | [dpdp-readiness-toolkit](https://github.com/Shashwat-Kumar/dpdp-readiness-toolkit) | Score a personal-data inventory against India's DPDP Act and Rules |
 
-[LinkedIn](https://www.linkedin.com/in/shashwat-kumar) · [Essays](https://shashwat-kumar.github.io/shashwat-analytics)
+[LinkedIn](https://www.linkedin.com/in/shashwat-kumar) · [Essays](https://readsigil.com/)
 
 <sub>All demos use synthetic data about fictional companies. Views are my own.</sub>
