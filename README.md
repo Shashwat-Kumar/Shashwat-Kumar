@@ -2,11 +2,11 @@
 
 *Most of what goes wrong with data and AI is not a modelling problem. It is a question of what we choose to measure, what we let machines decide, and who stays accountable.*
 
-15+ years leading analytics and AI across financial services, insurance and telecom/media. Based in Mumbai.
+15+ years leading analytics and AI across financial services, insurance and telecom/media. Based in Mumbai. I write about the quieter side of the work: governance, measurement, data quality, and how intelligent systems should be designed to earn trust.
 
 Today I lead business intelligence and analytics at a private-sector bank in Mumbai. Before that I headed advanced analytics and digital lending strategy at a retail lender (NBFC) and analytics at a health insurer, with earlier roles in commercial planning and analytics in satellite TV/media, and in telecom and technology.
 
-**Education:** PGDM, XLRI Jamshedpur · PGP, IIM Calcutta · Diploma in Advanced Analytics, ISI · FRM Part I (GARP) I write about the quieter side of the work: governance, measurement, data quality, and how intelligent systems should be designed to earn trust.
+**Education:** PGDM, XLRI Jamshedpur · PGP, IIM Calcutta · Diploma in Advanced Analytics, ISI · FRM Part I (GARP)
 
 **Essays** · [shashwat-kumar.github.io/shashwat-analytics](https://shashwat-kumar.github.io/shashwat-analytics)
 
