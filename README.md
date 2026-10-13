@@ -1,3 +1,5 @@
+<img src="assets/portrait.jpg" alt="Shashwat Kumar" width="160" align="right">
+
 ### Shashwat Kumar
 
 *Most of what goes wrong with data and AI is not a modelling problem. It is a question of what we choose to measure, what we let machines decide, and who stays accountable.*
