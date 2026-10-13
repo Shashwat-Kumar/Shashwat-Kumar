@@ -10,6 +10,10 @@ Today I lead business intelligence and analytics at a private-sector bank in Mum
 
 **Education:** PGDM, XLRI Jamshedpur · PGPMI · Diploma in Advanced Analytics, ISI · FRM Part I (GARP)
 
+**Featured** · [bounded-autonomy](https://github.com/Shashwat-Kumar/bounded-autonomy) · [live console](https://shashwat-kumar.github.io/bounded-autonomy/)
+
+A model that knows when not to act. Policy-as-code governance for AI decisions in banking: stakes tiers, prohibitions, abstention when the data can't be trusted, circuit breakers and a tamper-evident ledger. On 20,000 synthetic bank decisions it automates 54% of them at 18% lower cost than human review of everything, with zero prohibited actions.
+
 **Essays** · [readsigil.com](https://readsigil.com/)
 
 - [Faster cars need better brakes](https://readsigil.com/essays/brakes.html): deciding what a system may do on its own
