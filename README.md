@@ -1,12 +1,14 @@
 <img src="assets/portrait.jpg" alt="Shashwat Kumar" width="160" align="right">
 
-### Shashwat Kumar
+# Shashwat Kumar
 
 *Most of what goes wrong with data and AI is not a modelling problem. It is a question of what we choose to measure, what we let machines decide, and who stays accountable.*
 
-15+ years leading analytics and AI across financial services, insurance and telecom/media. Based in Mumbai. I write about the quieter side of the work: governance, measurement, data quality, and how intelligent systems should be designed to earn trust.
+**Head, Business Intelligence Unit · DCB Bank · Mumbai**
 
-Today I lead business intelligence and analytics at a private-sector bank in Mumbai. Before that I headed advanced analytics and digital lending strategy at a retail lender (NBFC) and analytics at a health insurer, with earlier roles in commercial planning and analytics in satellite TV/media, and in telecom and technology.
+15+ years across analytics and AI in banking, financial services, insurance and telecom/media. I write independently about decision intelligence, governance, measurement, data quality, and how intelligent systems earn trust.
+
+I currently head the Business Intelligence Unit at DCB Bank. Earlier, I headed advanced analytics and digital lending strategy at an NBFC and analytics at a health insurer, with prior roles in media, telecom and technology.
 
 **Education:** PGDM, XLRI Jamshedpur · PGPMI · Diploma in Advanced Analytics, ISI · FRM Part I (GARP)
 
@@ -14,7 +16,9 @@ Today I lead business intelligence and analytics at a private-sector bank in Mum
 
 A model that knows when not to act. Policy-as-code governance for AI decisions in banking: stakes tiers, prohibitions, abstention when the data can't be trusted, circuit breakers and a tamper-evident ledger. On 20,000 synthetic bank decisions it automates 54% of them at 18% lower cost than human review of everything, with zero prohibited actions.
 
-**Essays** · [readsigil.com](https://readsigil.com/)
+**Official personal website** · [ReadSigil](https://readsigil.com/) · [About Shashwat Kumar](https://readsigil.com/about.html) · [Media & interviews](https://readsigil.com/media.html)
+
+**Essays**
 
 - [Faster cars need better brakes](https://readsigil.com/essays/brakes.html): deciding what a system may do on its own
 - [When the score becomes the goal](https://readsigil.com/essays/goodhart.html): Goodhart's law in the age of optimising agents
@@ -33,6 +37,6 @@ A model that knows when not to act. Policy-as-code governance for AI decisions i
 | [kpi-dashboard-mis](https://github.com/Shashwat-Kumar/kpi-dashboard-mis) | One set of numbers: KPI dashboard and MIS pack generated end to end from code |
 | [dpdp-readiness-toolkit](https://github.com/Shashwat-Kumar/dpdp-readiness-toolkit) | Score a personal-data inventory against India's DPDP Act and Rules |
 
-[LinkedIn](https://www.linkedin.com/in/shashwat-kumar) · [Essays](https://readsigil.com/)
+[LinkedIn — Shashwat Kumar, DCB Bank](https://www.linkedin.com/in/shashwat-kumar) · [ReadSigil](https://readsigil.com/) · [Media](https://readsigil.com/media.html)
 
 <sub>All demos use synthetic data about fictional companies. Views are my own.</sub>
