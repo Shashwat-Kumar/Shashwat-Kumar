@@ -75,3 +75,27 @@ Run locally:
 python3 -m http.server 8000
 ```
 Then open `http://localhost:8000/gnn_money_mule_dashboard.html`.
+
+
+The dashboard loads pinned React 18.3.1, ReactDOM 18.3.1 and Babel Standalone
+7.26.9 from `vendor/`; no CDN, internet connection, npm install or build step
+is required to view it. Keep `vendor/` alongside the HTML when copying the demo.
+JavaScript must be enabled. The metrics are illustrative formulas, not measured
+model performance.
+
+### Offline regression test
+
+Test setup needs internet once (Node.js and Python 3 required):
+```bash
+npm install --no-save --package-lock=false playwright@1.62.1
+npx playwright install chromium
+```
+Then, from the repository root:
+```bash
+python3 -m unittest discover -s tests -p 'test_*.py'
+node tests/dashboard-offline.cjs
+```
+The test starts its own local server, uses a fresh browser context with service
+workers disabled, blocks every non-local request, and verifies initial rendering,
+both sliders, metrics and graph focus. It fails on external requests, failed
+local assets or browser errors. Test dependencies are not needed to run the demo.
