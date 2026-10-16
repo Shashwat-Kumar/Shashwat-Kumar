@@ -15,11 +15,11 @@
 
 *Most of what goes wrong with data and AI is not a modelling problem. It is a question of what we choose to measure, what we let machines decide, and who stays accountable.*
 
-**Head, Business Intelligence Unit · DCB Bank · Mumbai**
+**Head, Business Intelligence Unit · a private-sector bank · Mumbai**
 
 15+ years across analytics and AI in banking, financial services, insurance and telecom/media. I write independently about decision intelligence, governance, measurement, data quality, and how intelligent systems earn trust.
 
-I currently head the Business Intelligence Unit at DCB Bank. Earlier, I headed advanced analytics and digital lending strategy at an NBFC and analytics at a health insurer, with prior roles in media, telecom and technology.
+I currently head the Business Intelligence Unit at a private-sector bank. Earlier, I headed advanced analytics and digital lending strategy at an NBFC and analytics at a health insurer, with prior roles in media, telecom and technology.
 
 **Education:** PGDM, XLRI Jamshedpur · PGPMI · Diploma in Advanced Analytics, ISI · FRM Part I (GARP)
 
@@ -48,6 +48,6 @@ A model that knows when not to act. Policy-as-code governance for AI decisions i
 | [kpi-dashboard-mis](https://github.com/Shashwat-Kumar/kpi-dashboard-mis) | One set of numbers: KPI dashboard and MIS pack generated end to end from code |
 | [dpdp-readiness-toolkit](https://github.com/Shashwat-Kumar/dpdp-readiness-toolkit) | Score a personal-data inventory against India's DPDP Act and Rules |
 
-[LinkedIn — Shashwat Kumar, DCB Bank](https://www.linkedin.com/in/shashwat-kumar) · [ReadSigil](https://readsigil.com/) · [Media](https://readsigil.com/media.html)
+[LinkedIn — Shashwat Kumar](https://www.linkedin.com/in/shashwat-kumar) · [ReadSigil](https://readsigil.com/) · [Media](https://readsigil.com/media.html)
 
 <sub>All demos use synthetic data about fictional companies. Views are my own.</sub>
