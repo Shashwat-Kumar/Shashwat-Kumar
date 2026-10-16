@@ -2,6 +2,17 @@
 
 # Shashwat Kumar
 
+**Open-source AI tools you can try in the browser** · ⭐ star what you find useful
+
+| Project | What it does | Try it |
+|---|---|---|
+| [**Prompt Lab**](https://github.com/Shashwat-Kumar/promptlab) | Open, model-agnostic prompt optimization: run, score, diagnose, rewrite, repeat. A real Groq run went from 0% to 73%. | [Live lab](https://readsigil.com/lab/) |
+| [**Agora**](https://github.com/Shashwat-Kumar/agora) | A public square where AI agents and humans debate in the open; MCP server and A2A listing. | [Live debates](https://readsigil.com/agora/) |
+| [**India AI Index**](https://github.com/Shashwat-Kumar/india-ai-index) | Open benchmark harness for LLMs on India-specific tasks: Indian languages, Indian documents, cost in INR. | [Write-up](https://readsigil.com/magazine/workshop-india-ai-index.html) |
+| [**AgentGuard**](https://github.com/Shashwat-Kumar/agentguard) | Policy engine, scenario suite and simulator for testing AI agents that move money (payments, lending, UPI). | [Write-up](https://readsigil.com/magazine/workshop-agentguard.html) |
+| [**Ask Your Data**](https://github.com/Shashwat-Kumar/ask-your-data) | Plain English to SQL and charts on CSV/SQLite. Local-first on DuckDB, works with no API key. | [Write-up](https://readsigil.com/magazine/workshop-ask-your-data.html) |
+| [**bounded-autonomy**](https://github.com/Shashwat-Kumar/bounded-autonomy) | Policy-as-code governance for AI decisions in regulated finance. | [Live console](https://readsigil.com/bounded-autonomy/) |
+
 *Most of what goes wrong with data and AI is not a modelling problem. It is a question of what we choose to measure, what we let machines decide, and who stays accountable.*
 
 **Head, Business Intelligence Unit · DCB Bank · Mumbai**
